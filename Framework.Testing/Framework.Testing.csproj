@@ -3,7 +3,26 @@
     <PropertyGroup>
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
     </PropertyGroup>
-
+    
+    <ItemGroup>
+        <PackageReference Include="Alba" Version="7.3.0" />
+        <PackageReference Include="Bogus" Version="34.0.2" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+        <PackageReference Include="NSubstitute" Version="5.1.0" />
+        <PackageReference Include="nunit" Version="3.13.3" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+        <PackageReference Include="Serilog" Version="3.0.1" />
+        <PackageReference Include="Shouldly" Version="4.1.0" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\Framework.Utility\Framework.Utility.csproj" />
+      <ProjectReference Include="..\Framework.WebApi\Framework.WebApi.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Folder Include="FrameworkComponentTests\" />
+      <Folder Include="FrameworkComponentTests\Configuration\ConfigurationUtility\" />
+    </ItemGroup>
 </Project>
