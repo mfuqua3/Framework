@@ -5,11 +5,11 @@
 *.iml
 
 # C# build output
-server/**/bin/
-server/**/obj/
+**/bin/
+**/obj/
 
 # C# developmer settings
-server/**/appsettings.[dD]evelopment.json
+**/appsettings.[dD]evelopment.json
 
 
 # Visual Studio temporary files
